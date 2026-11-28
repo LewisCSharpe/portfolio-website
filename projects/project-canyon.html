@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Procedural Canyon Terrain Generation - Lewis Sharpe</title>
+  <meta name="theme-color" content="#0c0e12">
+  <link rel="icon" href="../assets/icon.jpg">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#project">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-mark" href="../main.html">Lewis Sharpe</a>
+      <nav aria-label="Sections">
+        <a href="../main.html#about">About</a>
+        <a href="../main.html#projects">Projects</a>
+        <a href="../main.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="case" id="project">
+    <a class="back" href="../main.html#projects">Return</a>
+    <h1>Procedural Canyon Terrain Generation</h1>
+    <div class="project-award">
+      <img src="../assets/Tiga-Logo-Transparant.png" width="80" height="30" alt="TIGA logo">
+      <p><a href="https://tiga.org/education-awards/2026-winners" target="_blank" rel="noopener noreferrer">TIGA Most Outstanding Graduate of the Year: Programmer - 2026 - Shortlisted</a></p>
+    </div>
+
+    <div class="video-frame">
+      <iframe src="https://www.youtube.com/embed/lxjf2yzebEg?si=GV-g3MfB0LVdvoFm" title="Procedural Canyon Terrain Generation with a Continuous river system" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <h2>Overview</h2>
+    <p>Procedural canyon terrain generation created in Unity as part of my final-year university dissertation. The project features a dynamic chunk-based loading system that generates terrain around the player as they move, along with a system for generating a continuous river path through the terrain.</p>
+    <p>The generation system includes various optimisations to help make it suitable for use in a game. Basic player movement and collision mechanics are also implemented to demonstrate the terrain generation in action.</p>
+    <p>For more detail check out my dissertation at the bottom of the page.</p>
+
+    <h2>Key Features</h2>
+    <ul class="feature-list">
+      <li>Multithreaded chunk-based terrain generation</li>
+      <li>A* pathfinding through chunk heightmaps for continuous river path generation, utilising path smoothing and river carve parameters</li>
+      <li>Multi-Octave Perlin noise for heightmap generation</li>
+      <li>Mesh generation from heightmaps</li>
+      <li>Dynamic distance based mesh Level of Detail</li>
+      <li>Frustum culling of terrain chunks</li>
+      <li>Terrain collider generation</li>
+      <li>Environmental prop scattering</li>
+      <li>Custom canyon terrain shader</li>
+      <li>Gameplay implementation for a playable demo</li>
+    </ul>
+
+    <h2>What I Learned</h2>
+    <p>Working on this project gave me a much better understanding of procedural terrain generation as a whole, from researching techniques like erosion and combining noise functions to experimenting with Perlin noise and its parameters to create the terrain I wanted.</p>
+    <p>I also became more confident with multithreading and optimisation techniques such as frustum culling and distance-based level of detail (LOD). Alongside this, I used my previous knowledge and applied the A* pathfinding algorithm in a new environment. I've also improved my familiarity and skills within the unity game engine as well as played around with new tools such as unity's shadergraph.</p>
+
+    <h2>Dissertation</h2>
+    <div class="pdf-frame">
+      <iframe src="../assets/dissertation.pdf" title="Dissertation"></iframe>
+    </div>
+    <p class="pdf-link"><a href="../assets/dissertation.pdf">Open dissertation PDF</a></p>
+    <a class="back back-end" href="../main.html#projects">Back to projects</a>
+  </main>
+</body>
+</html>
